@@ -1,0 +1,28 @@
+
+.none {
+    display: none;
+}
+.border {
+    border: 1px solid;
+}
+.invert {
+    filter: invert(1);
+}
+.inline {
+    display: inline;
+}
+.center {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.scale {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale:hover {
+    transform: scale(1.7);
+}

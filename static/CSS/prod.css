@@ -1,0 +1,15 @@
+
+.flex2{
+    display: flex;
+}
+.main{
+    margin: 30px;
+}
+.item-name{
+    font-size: 4rem;
+    margin: 20px;
+}
+.image{
+    object-fit: cover;
+    width: 90vw;
+}

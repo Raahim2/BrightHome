@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Home | Confirm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="/static/CSS/style.css">
+<link rel="stylesheet" href="/static/CSS/utils.css">
+
+<style>
+
+@media screen and (max-width: 790px) {
+
+
+
+.nav-items {
+    display: none;
+}
+
+ul {
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.search {
+    margin: 10px 0;
+}
+
+.btn {
+    width: 35%;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.text1 {
+    line-height: 1.2;
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.text2 {
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: center;
+    color: #f0f0f0;
+    width: 80%;
+}
+.search{
+    margin: 40px;
+}
+
+.bg {
+height: 70vh;
+background-image: url(/static/IMG/cover.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #f0f0f0;   
+}
+.img{
+    height: 120px;
+}
+.img2{
+    height: 120px;
+}
+.confirmation-container{
+    width: 250px;
+}
+
+
+}
+
+    .confirmation-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+            margin: 0 auto; 
+            margin-top: 100px; 
+            text-align: center;
+        }
+
+        .confirmation-icon {
+            color: #28a745;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-text {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-details {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .back-to-home {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block; /
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    
+</style>
+<body>
+
+    <nav>
+        <div class="logo inline">
+            <img src="/static/IMG/wardrobe-02.svg" alt="">
+            <p class="inline logo-txt">Bright Home</p>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li class="inline scale" onclick="direct_to('/')">Home</li>
+                <li class="inline scale" onclick="direct_to('cateogry/All')">Shop</li>
+                <li class="inline scale">Contact</li>
+                <li class="inline scale" onclick="direct_to('/UserLogin')">Login</li>
+            </ul>
+        </div>
+        <div>
+            <div class="search inline ">
+                <img src="/static/IMG/search-01.svg" alt="" class="">
+            </div>
+            <div class="cart inline ">
+                <img src="/static/IMG/shopping-bag-03.svg" alt="" onclick="direct_to('/cart')">
+            </div>
+        </div>
+    </nav>
+
+    <div class="confirmation-container">
+        <div class="confirmation-icon">&#10004;</div>
+        <div class="confirmation-text">Order Confirmed!</div>
+        <div class="confirmation-details">
+            Your order has been successfully placed. Thank you for shopping with us!
+        </div>
+        <p  class="confirmation-text">For any enquiry contact : 8850287352</p>
+        <p  class="confirmation-text">Visit our shop at</p>
+        <a  href="https://maps.app.goo.gl/jC3G7wL5ZNm9kLHg7">Shop No 6 , Jay Vijay Garden Opp to Sarsawati Bank Nallasopara - Vasai Link Road Vasai (East) Palghar - 401209</a>
+        <div class="back-to-home" onclick="direct_to('/')">Back to Home</div>
+        <a href="https://maps.app.goo.gl/jC3G7wL5ZNm9kLHg7"><div class="back-to-home" >Visit our shop</div></a>
+    </div>
+
+    <section>
+        <div class="section-heading">
+            Continue Shopping
+        </div>
+        <div class="flex">
+            <div class="flex-items hov" onclick="direct_to('cateogry/Table')">
+                <div>
+                    <img class="img2" src="/static/IMG/table.svg" alt="">
+                </div>
+                <p class="center">Table</p>
+            </div>
+            <div class="flex-items hov" onclick="direct_to('cateogry/Sofa')">
+                <div>
+                    <img class="img2" src="/static/IMG/sofa.svg" alt="">
+                </div>
+                <p class="center">Sofa</p>
+            </div>
+            <div class="flex-items hov" onclick="direct_to('cateogry/Unit')">
+                <div>
+                    <img class="img2" src="/static/IMG/wardeobe.svg" alt="">
+                </div>
+                <p class="center">Unit</p>
+            </div>
+            <div class="flex-items hov" onclick="direct_to('cateogry/Bed')">
+                <div>
+                    <img class="img2" src="/static/IMG/bed.svg" alt="">
+                </div>
+                <p class="center">Bed</p>
+            </div>
+            <div class="flex-items hov" onclick="direct_to('cateogry/Chair')">
+                <div>
+                    <img class="img2" src="/static/IMG/chair.svg" alt="">
+                </div>
+                <p class="center">Chair</p>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    
+    <footer class="footer">
+        &copy; 2024 Bright Home Furniture All Rights Reserved.
+        
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/cateogry/All">Shop</a>
+            <a href="/">Contact</a>
+            <a href="/admin">Admin Login</a>
+        </div>
+    </footer>
+
+    
+
+</body>
+<script src="/static/JS/index.js"></script>
+
+</html>

@@ -1,10 +1,12 @@
-# Bright Home Furniture - E-Commerce Website
+# Bright Home Furniture - E-Commerce Website And Mobile App
 
 Welcome to Bright Home Furniture, your go-to destination for high-quality furniture shopping online. This Django-powered e-commerce website allows users to explore a wide range of furniture products and place orders conveniently from the comfort of their homes.
 
 ## Live Website
 
 Visit the live website: [Bright Home Furniture](https://brighthomesfurniture.com)
+Visit the live Vercel : [Bright Home Furniture Vercel](https://brighthome.vercel.app)
+
 
 ## Features
 
@@ -15,19 +17,26 @@ Visit the live website: [Bright Home Furniture](https://brighthomesfurniture.com
 - **Secure Transactions:** Ensured through Django's security features.
 - **Responsive Design:** Enjoy a seamless experience on various devices.
 
-## Technologies Used
+## Technologies Used Web
 
 - **Django:** The web framework for building the application.
 - **HTML/CSS/JavaScript:** Frontend technologies for a user-friendly interface.
 - **Django REST Framework:** Used for building APIs.
-- **Database:** [Specify the database you are using, e.g., PostgreSQL].
+- **Database:** PostgreSQL
 - **Vercel:** Hosting provider for the live deployment.
+
+## Technologies Used App
+
+- **React Native:** The App dev framework for building the smooth mobile apps.
+- **JavaScript Extention (JSX):** Frontend technologies for a user-friendly interface.
+- **Flask Backend:** Used for building APIs.
+- **Database:** Mongodb With Flask Pymongo
 
 ## Getting Started
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/bright-home-furniture.git`
+1. Clone the repository: `git clone https://github.com/Raahim2/BrightHome.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Apply migrations: `python manage.py migrate`
 4. Create a superuser account: `python manage.py createsuperuser`
